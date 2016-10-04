@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import {Router, Route, Link, hashHistory} from 'react-router';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from './Navbar'
+import Categories from './Categories'
+import SearchBar from './Searchbar'
+import './App.css'
 
 var App = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Hello World!</h1>
+       <SearchBar/>
+       <Navbar />
+       <Categories />
       </div>
     )
   }
