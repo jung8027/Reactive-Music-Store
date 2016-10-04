@@ -415,5 +415,5 @@ data.getAbout = function() {
   return this.about;
 };
 
-console.log(data)
-//export default data;
+
+export default data;
