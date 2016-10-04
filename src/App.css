@@ -74,3 +74,46 @@ div.banner {
   list-style: none;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+    margin: 0px;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .genre:hover {
+    color: #E6E8FA;
+    -moz-transform: translate(30px, 00px);
+    -webkit-transform: translate(30px, 00px);
+    -moz-border-radius: 0 9px 9px 0;
+    -webkit-border-radius: 0 9px 9px 0;
+    border-radius: 0 9px 9px 0;
+    transform: translate(30px, 00px);
+    background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#7EB6FF), to(#61dafb));
+    background: -ms-gradient(linear, 80% 20%, 10% 21%, from(#7EB6FF), to(#61dafb));
+    background: -moz-gradient(linear, 80% 20%, 10% 21%, from(#7EB6FF), to(#61dafb))
+}
+
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+
+  }
+  .sidebar-nav .navbar .genre {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.sidebar-divs {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.row.sidebar-divs {
+  /*width: 242.5px;*/
+}
