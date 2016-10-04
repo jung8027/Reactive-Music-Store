@@ -13,7 +13,7 @@ var Carousel = React.createClass({
     <h2>FEATURED ALBUMS</h2><br></br>
    <Coverflow
     width={960}
-    height={480}
+    height={250}
     displayQuantityOfSide={2}
     navigation={false}
     enableHeading={false}
