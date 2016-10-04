@@ -8,7 +8,7 @@ var data = {
 	featuredTen: {
 		drake: {albumTitle: 'Views', artist: 'Drake', albumPrice: '$13.99', genre: 'Rap & Hip-Hop', 
 			cover: "https://i.scdn.co/image/90f080afbec29a0c58509875a6dd59b3c380e353", 
-			//previewSong:,
+			previewSong: null,
 			songs: 
 				[{songTitle: 'Keep the Family Close', price:'$1.29'},
 				{songTitle: '9', price:'$1.29'},
@@ -33,7 +33,7 @@ var data = {
 		},
 		solange: {albumTitle: 'A Seat at the Table', artist: 'Solange', albumPrice: '$10.99', genre: "R&B", 
 			cover:"https://i.scdn.co/image/5e2cc94e5f5229acef8b49a7895da5030a94e849",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Rise', price:'$1.29'},
 				{songTitle: 'Weary', price:'$1.29'},
@@ -59,7 +59,7 @@ var data = {
 		},
 		bonIver: {albumTitle: '22, A Million', artist: 'Bon Iver', albumPrice: '$9.99', genre: 'Alternative', 
 			cover:"https://i.scdn.co/image/52abd9c07908386d56681b87a3c22b54bc904ed6",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: '22 (OVER SooN)', price:'$1.29'},
 				{songTitle: '10 d E A T h b R E a s T', price:'$1.29'},
@@ -74,7 +74,7 @@ var data = {
 		},
 		frankOcean: {albumTitle: 'Blonde', artist: 'Frank Ocean', albumPrice: '$9.99', genre: "Pop", 
 			cover:"https://i.scdn.co/image/14e795dfa0e03a59caa2411595175f09caaf19b8",
-			//previewSong:,			
+			previewSong: null,			
 			songs:
 				[{songTitle: 'Nikes', price:'$1.29'},
 				{songTitle: 'Ivy', price:'$1.29'},
@@ -95,7 +95,7 @@ var data = {
 				{songTitle: 'Futura Free', price:'$1.29'}]
 		},
 		floridaGeorgiaLine: {albumTitle: 'Dig Your Roots', artist: 'Florida Georgia Line', albumPrice: '$12.99', genre: "Country",cover:"https://i.scdn.co/image/a29b7f8b600728f13e55d07ee94848c6daae7d91",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Smooth', price:'$1.29'},
 				{songTitle: 'Dig Your Roots', price:'$1.29'},
@@ -115,7 +115,7 @@ var data = {
 		},
 		arianaGrande: {albumTitle: 'Dangerous Woman', artist: 'Ariana Grande', albumPrice: '$6.99', genre: "Pop", 
 			cover:"https://i.scdn.co/image/234d8916b078991ccd6ebe7e005451acf3e0c22e",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Moonlight', price:'$1.29'},
 				{songTitle: 'Dangerous Woman', price:'$1.29'},
@@ -135,7 +135,7 @@ var data = {
 		},
 		vanMorrison: {albumTitle: 'Keep Me Singing', artist: 'Van Morrison', albumPrice: '$9.99', genre: 'Rock', 
 			cover: "https://images-na.ssl-images-amazon.com/images/I/61qmrGg-X5L._SY300_.jpg",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Let It Rhyme', price:'$1.29'},
 				{songTitle: 'Every Time I See a River', price:'$1.29'},
@@ -153,7 +153,7 @@ var data = {
 		},
 		panicAtTheDisco: {albumTitle: 'Death of A Bachelor', artist: 'Panic! At the Disco', albumPrice: '$6.99', genre: "Alternative", 
 			cover:"https://i.scdn.co/image/2071aea7efa2dfcd43268212cc5b001cb1c3858e",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Victorious', price:'$1.29'},
 				{songTitle: "Don't Threaten Me with a Good Time", price:'$1.29'},
@@ -169,7 +169,7 @@ var data = {
 		},
 		banks: {albumTitle: 'The Altar', artist: 'Banks', albumPrice: '$9.99', genre: "Alternative", 
 			cover:"https://i.scdn.co/image/b4567c14b61beec12ba4179750e9374ef4f72d67",
-			//previewSong:,
+			previewSong: null,
 			songs:
 				[{songTitle: 'Gemini Feed', price:'$1.29'},
 				{songTitle: 'Fuck with Myself', price:'$1.29'},
@@ -187,7 +187,7 @@ var data = {
 		},
 		johnMelissa: {albumTitle: 'Beautiful Surrender', artist: 'Jonathan David & Melissa Helser', albumPrice: '$10.99', genre: 'Christian & Gospel',
 			cover:"https://i.scdn.co/image/77b5058112d5d4b73967e29e67d02e82e78bcf90",
-			//previewSong:,
+		previewSong: null,
 			songs:
 				[{songTitle: 'Beautiful Surrender', price:'$1.29'},
 				{songTitle: 'You Came (Lazarus)', price:'$1.29'},
@@ -286,7 +286,6 @@ var data = {
 	deals: {
 		nickJonas: {albumTitle: 'Last Year Was Complicated', artist: 'Nick Jonas', albumPrice: '$6.99', genre: 'Pop', 
 			cover: "https://i.scdn.co/image/b9713fcf8137554ee4e3b6b2c4d55d0b265a0df0",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Voodoo', price:'$1.29'},
 				{songTitle: 'Champagne Problems', price:'$1.29'},
@@ -303,7 +302,6 @@ var data = {
 		},
 		vinceStaples: {albumTitle: 'Prima Donna', artist: 'Vince Staples', albumPrice: '$6.99', genre: 'Rap & Hip-Hop', 
 			cover: "https://i.scdn.co/image/ef0147a638476ae14f520c83b69df7cf1b6098fb",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Let It Shine', price:'$1.29'},
 				{songTitle: 'War Ready', price:'$1.29'},
@@ -315,7 +313,6 @@ var data = {
 		},
 		vicMensa: {albumTitle: "There's Alot Going On", artist: 'Vic Mensa', albumPrice: '$6.99', genre: 'Rap & Hip-Hop', 
 			cover: "https://i.scdn.co/image/7ea71b3c74986997eb6aaa122f5b3bfa6d37a56b",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Dynasty', price:'$1.29'},
 				{songTitle: '16 Shots', price:'$1.29'},
@@ -327,7 +324,6 @@ var data = {
 		},
 		littleBigTown: {albumTitle: "Wanderlust", artist: 'Little Big Town', albumPrice: '$7.99', genre: 'Country', 
 			cover: "https://i.scdn.co/image/44932dcb3f62a78f67ea42c0835a6fcc0e05aa98",
-			//previewSong:,
 			songs:
 				[{songTitle: 'One Dance', price:'$1.29'},
 				{songTitle: "C'mon", price:'$1.29'},
@@ -340,7 +336,6 @@ var data = {
 		},		
 		dierksBentley: {albumTitle: "Up On the Ridge", artist: 'Dierks Bentley', albumPrice: '$5.99', genre: 'Country', 
 			cover: "https://i.scdn.co/image/22de378c4592d1de9da553c5168d2cbb25f12709",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Up On the Ridge', price:'$1.29'},
 				{songTitle: "Fallin' For You", price:'$1.29'},
@@ -357,7 +352,6 @@ var data = {
 		},	
 		youngGuns: {albumTitle: "Echoes", artist: 'Young Guns', albumPrice: '$7.99', genre: 'Rock', 
 			cover: "https://i.scdn.co/image/b0dcba86f9df2f9413c7c513dec936741eed5458",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Bulletproof', price:'$1.29'},
 				{songTitle: "Echoes", price:'$1.29'},
@@ -373,7 +367,6 @@ var data = {
 		},	
 		sonicYouth: {albumTitle: "Goo", artist: 'Sonic Youth', albumPrice: '$7.99', genre: 'Rock', 
 			cover: "https://i.scdn.co/image/93e438d4b4e7cecbbfd7d746f37b5ba35200549f",
-			//previewSong:,
 			songs:
 				[{songTitle: 'Dirty Boots', price:'$1.29'},
 				{songTitle: 'Tunic (Song for Karen)', price:'$1.29'},
@@ -389,7 +382,6 @@ var data = {
 		},	
 		dvsn: {albumTitle: "SEPT. 5TH", artist: 'dvsn', albumPrice: '$7.99', genre: 'R&B', 
 			cover: "https://i.scdn.co/image/d609584c62d5b07eba7d601a4bf5a86b946b0375",
-			//previewSong:,
 			songs:
 				[{songTitle: 'With Me', price:'$1.29'},
 				{songTitle: 'Too Deep', price:'$1.29'},
@@ -425,18 +417,3 @@ data.getAbout = function() {
 
 console.log(data)
 //export default data;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
