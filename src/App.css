@@ -1,3 +1,8 @@
+#page {
+  padding: 5px;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
@@ -21,4 +26,51 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+div.banner {
+  text-align: center;
+  /*height: 150px;*/
+  /*padding: 0px;*/
+  /*margin-bottom: 80px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*background-image: url('./../images/ReactiveLogo.jpg');
+  background-repeat: no-repeat;*/
+  /*background-color: white;*/
+}
+
+#banner-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  /*top: 150px;*/
+  margin-bottom: 30px;
+  border-radius: 1px;
+}
+
+.album{
+  height: 150px;
+  width: 150px;
+}
+
+.carousel-1{
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+  padding-left: 20px;
+}
+
+
+.coverflow__stage__14oqC{
+ /*background-color: white;*/
+}
+
+#footer li {
+  list-style: none;
+  text-align: center;
 }
