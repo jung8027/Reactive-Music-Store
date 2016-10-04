@@ -7,10 +7,19 @@ import Coverflow from 'react-coverflow';
 
 
 var Carousel = React.createClass({
+  autoscroll: function(){
+    $('.carousel-1').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  },
   render: function(){
     return(
     <div className='carousel-1'>
-    <h2>FEATURED ALBUMS</h2><br></br>
+    <h2>FEATURED ALBUMS</h2>
+    <br></br>
    <Coverflow
     width={960}
     height={250}
@@ -28,6 +37,7 @@ var Carousel = React.createClass({
     <img src={require('./../images/album-8.png')} alt='Album eight'/>
     <img src={require('./../images/album-9.png')} alt='Album nine' />
   </Coverflow>
+
   </div>
   )
   }

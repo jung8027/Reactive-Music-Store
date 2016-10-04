@@ -18,7 +18,7 @@ const AlbumTile = React.createClass({
     }
 
     return (
-      <div>
+      <div className="flexcontainer">
         {albumInfo}
        </div>
     )

@@ -11,6 +11,16 @@ html, body {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+.albums{
+  padding: 10px;
+}
+.flexcontainer{
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+}
 
 .App-header {
   background-color: #222;
@@ -42,6 +52,10 @@ img{
   padding-left: 20px;
 }
 
+/*.coverflow__stage__14oqC{
+  background-color: transparent;
+}*/
+
 .coverflow__container__1P-xE {
-  background: none; 
+  background-color: transparent; 
 }

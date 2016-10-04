@@ -12,7 +12,7 @@ const Albums = React.createClass({
 	},
   render: function() {
     return (
-      <div className="col-md-2">
+      <div className="albums">
       <img src={this.props.songImg}></img>
         <p>{this.props.songAlbum}</p>
         <p>{this.props.songArtist}</p>
