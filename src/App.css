@@ -1,3 +1,8 @@
+html, body {
+  padding: 5px;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
@@ -21,4 +26,27 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+img{
+  height: 150px;
+  width: 150px;
+}
+
+.carousel-1{
+  text-align: center;
+}
+
+.row{
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.coverflow__container__1P-xE {
+  background: none; 
+  height: 250px;
+}
+
+.col-md-3{
+  align-content: center;
 }
