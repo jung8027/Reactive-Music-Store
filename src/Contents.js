@@ -4,7 +4,6 @@ import {Router, Route, Link, hashHistory} from 'react-router';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
 import Coverflow from 'react-coverflow';
-import {StyleRoot} from 'radium';
 import AlbumTile from './AlbumTile'
 import data from './data'
 import './App.css'
@@ -30,12 +29,5 @@ var Contents = React.createClass({
   )
   }
 })
-
-
-ReactDOM.render(
-  <Contents />
-  ,
-  document.getElementById('root')
-);
 
 export default Contents;
