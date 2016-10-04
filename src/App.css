@@ -2,7 +2,6 @@
   padding: 5px;
   justify-content: center;
 }
-
 .App {
   text-align: center;
 }
@@ -28,16 +27,8 @@
   to { transform: rotate(360deg); }
 }
 
-div.banner {
+.banner {
   text-align: center;
-  /*height: 150px;*/
-  /*padding: 0px;*/
-  /*margin-bottom: 80px;*/
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*background-image: url('./../images/ReactiveLogo.jpg');
-  background-repeat: no-repeat;*/
-  /*background-color: white;*/
 }
 
 #banner-img {
@@ -46,7 +37,6 @@ div.banner {
 }
 
 .navbar {
-  /*top: 150px;*/
   margin-bottom: 30px;
   border-radius: 1px;
 }
@@ -114,6 +104,16 @@ div.banner {
   padding: 0px;
 }
 
-div.row.sidebar-divs {
-  /*width: 242.5px;*/
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.boxdiv {
+  display: inline-block;
+  width: 450px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: silver;
+  margin-left: 100px;
 }

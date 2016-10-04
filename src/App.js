@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, hashHistory} from 'react-router';
-import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import data from './data.js';
+import Navbar from './Navbar.jsx'
 import NewReleases from './NewReleases.jsx';
 import Deals from './Deals.jsx';
 import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
-// import Coverflow from 'react-coverflow';
-// import AlbumTile from './AlbumTile'
-//import Carousel  from './Carousel'
 
 
 
