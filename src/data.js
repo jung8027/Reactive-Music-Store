@@ -187,7 +187,7 @@ var data = {
 		},
 		johnMelissa: {albumTitle: 'Beautiful Surrender', artist: 'Jonathan David & Melissa Helser', albumPrice: '$10.99', genre: 'Christian & Gospel',
 			cover:"https://i.scdn.co/image/77b5058112d5d4b73967e29e67d02e82e78bcf90",
-			previewSong: null,
+		previewSong: null,
 			songs:
 				[{songTitle: 'Beautiful Surrender', price:'$1.29'},
 				{songTitle: 'You Came (Lazarus)', price:'$1.29'},
@@ -202,30 +202,218 @@ var data = {
 				{songTitle: 'Catch the Wind', price:'$1.29'},
 				{songTitle: 'No Longer Slaves (Radio Remix) [Bonus Track]', price:'$1.29'}]
 		},
+	},
+	staffPicks: {
+		Ambar: {albumTitle: "Christine and the Queens", artist: "Christine and the Queens", albumPrice: "$7.99", genre: "Alternative", faveTrack: "Tilted",
+		cover:"https://i.scdn.co/image/36f6f8627a30740907c53390f7a7b77c49ede6da",
+		songs:
+				[{songTitle: 'iT', price:'$1.29'},
+				{songTitle: 'Saint Claude', price:'$1.29'},
+				{songTitle: 'Tilted', price:'$1.29'},
+				{songTitle: 'No Harm Is Done (feat. Tunji Ige)', price:'$1.29'},
+				{songTitle: 'Science Fiction', price:'$1.29'},
+				{songTitle: 'Paradis Perdus', price:'$1.29'},
+				{songTitle: 'Half Ladies', price:'$1.29'},
+				{songTitle: 'Jonathan (feat. Perfume Genius)', price:'$1.29'},
+				{songTitle: 'Narcissus is Back', price:'$1.29'},
+				{songTitle: 'Safe and Holy', price:'$1.29'},
+				{songTitle: 'Night52', price:'$1.29'},
+				{songTitle: 'Here', price:'$1.29'}]
+		},
+		Jung: {albumTitle: "Mind Over Matter", artist: "Zion I", albumPrice: "$11.99", genre: "Pop", faveTrack: "Revolution (B-Boy Anthem)",
+		cover:"https://i.scdn.co/image/39b419e188086f21db38f3a5f15953130658b2d9",
+		songs:
+				[{songTitle: 'Creation', price:'$1.29'},
+				{songTitle: 'Revolution (B-Boy Anthem)', price:'$1.29'},
+				{songTitle: 'Critical', price:'$1.29'},
+				{songTitle: 'Mysterious Wayz', price:'$1.29'},
+				{songTitle: 'The Choice', price:'$1.29'},
+				{songTitle: 'Koncrete Jungle', price:'$1.29'},
+				{songTitle: 'Metropolis', price:'$1.29'},
+				{songTitle: 'Oh Lawd', price:'$1.29'},
+				{songTitle: 'Trippin', price:'$1.29'},
+				{songTitle: 'How Many', price:'$1.29'},
+				{songTitle: 'Elevation', price:'$1.29'},
+				{songTitle: 'A Little Change', price:'$1.29'},
+				{songTitle: 'Fools Gold', price: '$1.29'},
+				{songTitle: 'Venus', price:'$1.29'},
+				{songTitle: 'Rap Degreez', price:'$1.29'},
+				{songTitle: 'Silly Puddy', price:'$1.29'},
+				{songTitle: 'Inner Light', price:'$1.29'},
+				{songTitle: 'Big Ups', price:'$1.29'},
+				{songTitle: 'All Tha Way', price:'$1.29'},
+				{songTitle: 'One', price:'$1.29'},
+				{songTitle: 'Innerlight (Icy Remix)', price: '$1.29'}]
+		},
+		Ruben: {albumTitle: "To Pimp a Butterfly", artist: "Kendrick Lamar", albumPrice: "$13.99", genre: "Rap & Hip-Hop", faveTrack: 'The Blacker the Berry',
+		cover:"https://i.scdn.co/image/91a2c697abefed24e40d758c985b4b48537638df",
+		songs:
+				[{songTitle: "Wesley's Theory (feat. George Clinton & Thundercat)", price:'$1.29'},
+				{songTitle: 'For Free? (Interlude)', price:'$1.29'},
+				{songTitle: 'King Kunta', price:'$1.29'},
+				{songTitle: 'Institutionalized (feat. Bilal, Anna Wise & Snoop Dogg)', price:'$1.29'},
+				{songTitle: 'These Walls (feat. Bilal, Anna Wise & Thundercat)', price:'$1.29'},
+				{songTitle: "u", price:'$1.29'},
+				{songTitle: 'Alright', price:'$1.29'},
+				{songTitle: 'For Sale? (Interlude)', price:'$1.29'},
+				{songTitle: 'Momma', price:'$1.29'},
+				{songTitle: 'Hood Politics', price:'$1.29'},
+				{songTitle: 'How Much a Dollar Cost (feat. James Fauntleroy & Ronald Isley)', price:'$1.29'},
+				{songTitle: 'Complexion (A Zulu Love) [feat. Rapsody]', price:'$1.29'},
+				{songTitle: 'The Blacker the Berry', price: '$1.29'},
+				{songTitle: "You Ain't Gotta Lie (Momma Said)", price:'$1.29'},
+				{songTitle: 'i', price:'$1.29'},
+				{songTitle: 'Mortal Man', price: '$1.29'}]
+		},
+		Salina: {albumTitle: "Set Yourself On Fire", artist: "Stars", albumPrice: "$9.99", genre: "Alternative", faveTrack: "Your Ex-Lover Is Dead",
+		cover:"https://i.scdn.co/image/d432b60f75c5c41c1a1c96558f8e75736bdd9dd4",
+		songs:
+				[{songTitle: 'Your Ex-Lover Is Dead', price:'$1.29'},
+				{songTitle: 'Set Yourself on Fire', price:'$1.29'},
+				{songTitle: 'Ageless Beauty', price:'$1.29'},
+				{songTitle: 'Reunion', price:'$1.29'},
+				{songTitle: 'The Big Fight', price:'$1.29'},
+				{songTitle: "What I'm Trying to Say", price:'$1.29'},
+				{songTitle: 'One More Night', price:'$1.29'},
+				{songTitle: 'Sleep Tonight', price:'$1.29'},
+				{songTitle: 'The First Five Times', price:'$1.29'},
+				{songTitle: 'He Lied About Death', price:'$1.29'},
+				{songTitle: 'Celebration Guns', price:'$1.29'},
+				{songTitle: 'Soft Revolution', price:'$1.29'},
+				{songTitle: 'Calendar Girl', price: '$1.29'}]
+		}
+	},
+	deals: {
+		nickJonas: {albumTitle: 'Last Year Was Complicated', artist: 'Nick Jonas', albumPrice: '$6.99', genre: 'Pop', 
+			cover: "https://i.scdn.co/image/b9713fcf8137554ee4e3b6b2c4d55d0b265a0df0",
+			songs:
+				[{songTitle: 'Voodoo', price:'$1.29'},
+				{songTitle: 'Champagne Problems', price:'$1.29'},
+				{songTitle: 'Close (feat. Tove Lo)', price:'$1.29'},
+				{songTitle: 'Chainsaw', price:'$1.29'},
+				{songTitle: 'Touch', price:'$1.29'},
+				{songTitle: 'Bacon (feat. Ty Dolla $ign)', price:'$1.29'},
+				{songTitle: 'Good Girls (feat. Big Sean)', price:'$1.29'},
+				{songTitle: 'The Difference', price:'$1.29'},
+				{songTitle: "Don't Make Me Choose", price:'$1.29'},
+				{songTitle: 'Under You', price:'$1.29'},
+				{songTitle: 'Unhinged', price:'$1.29'},
+				{songTitle: 'Comfortable', price:'$1.29'}]
+		},
+		vinceStaples: {albumTitle: 'Prima Donna', artist: 'Vince Staples', albumPrice: '$6.99', genre: 'Rap & Hip-Hop', 
+			cover: "https://i.scdn.co/image/ef0147a638476ae14f520c83b69df7cf1b6098fb",
+			songs:
+				[{songTitle: 'Let It Shine', price:'$1.29'},
+				{songTitle: 'War Ready', price:'$1.29'},
+				{songTitle: 'Smile', price:'$1.29'},
+				{songTitle: 'Loco (feat. Kilo Kish)', price:'$1.29'},
+				{songTitle: 'Prima Donna (feat. A$AP Rocky)', price:'$1.29'},
+				{songTitle: 'Pimp Hand', price:'$1.29'},
+				{songTitle: 'Big Time', price:'$1.29'}]
+		},
+		vicMensa: {albumTitle: "There's Alot Going On", artist: 'Vic Mensa', albumPrice: '$6.99', genre: 'Rap & Hip-Hop', 
+			cover: "https://i.scdn.co/image/7ea71b3c74986997eb6aaa122f5b3bfa6d37a56b",
+			songs:
+				[{songTitle: 'Dynasty', price:'$1.29'},
+				{songTitle: '16 Shots', price:'$1.29'},
+				{songTitle: 'Danger', price:'$1.29'},
+				{songTitle: 'New Bae', price:'$1.29'},
+				{songTitle: 'Liquor Locker', price:'$1.29'},
+				{songTitle: 'Shades of Blue', price:'$1.29'},
+				{songTitle: "There's Alot Going On", price:'$1.29'}]
+		},
+		littleBigTown: {albumTitle: "Wanderlust", artist: 'Little Big Town', albumPrice: '$7.99', genre: 'Country', 
+			cover: "https://i.scdn.co/image/44932dcb3f62a78f67ea42c0835a6fcc0e05aa98",
+			songs:
+				[{songTitle: 'One Dance', price:'$1.29'},
+				{songTitle: "C'mon", price:'$1.29'},
+				{songTitle: 'One of Those Days', price:'$1.29'},
+				{songTitle: 'Work', price:'$1.29'},
+				{songTitle: "Skinny Dippin'", price:'$1.29'},
+				{songTitle: 'Willpower', price:'$1.29'},
+				{songTitle: 'Miracle', price:'$1.29'},
+				{songTitle: 'The Boat', price:'$1.29'}]
+		},		
+		dierksBentley: {albumTitle: "Up On the Ridge", artist: 'Dierks Bentley', albumPrice: '$5.99', genre: 'Country', 
+			cover: "https://i.scdn.co/image/22de378c4592d1de9da553c5168d2cbb25f12709",
+			songs:
+				[{songTitle: 'Up On the Ridge', price:'$1.29'},
+				{songTitle: "Fallin' For You", price:'$1.29'},
+				{songTitle: 'Senor (Tales of Yankee Power) [feat. Punch Brothers]', price:'$1.29'},
+				{songTitle: "Rovin' Gambler (feat. Punch Brothers)", price:'$1.29'},
+				{songTitle: "Draw Me a Map", price:'$1.29'},
+				{songTitle: 'Bad Angel (feat. Miranda Lambert & Jamey Johnson)', price:'$1.29'},
+				{songTitle: "Fiddlin' Around", price:'$1.29'},
+				{songTitle: "You're Dead To Me", price:'$1.29'},
+				{songTitle: "Pride (In the Name of Love) [feat. Punch Brothers]", price:'$1.29'},
+				{songTitle: 'Love Grows Wild', price:'$1.29'},
+				{songTitle: "Bottle To the Bottom (feat. Kris Kristofferson)", price:'$1.29'},
+				{songTitle: "Down In the Mine", price:'$1.29'}]
+		},	
+		youngGuns: {albumTitle: "Echoes", artist: 'Young Guns', albumPrice: '$7.99', genre: 'Rock', 
+			cover: "https://i.scdn.co/image/b0dcba86f9df2f9413c7c513dec936741eed5458",
+			songs:
+				[{songTitle: 'Bulletproof', price:'$1.29'},
+				{songTitle: "Echoes", price:'$1.29'},
+				{songTitle: 'Careful What You Wish For', price:'$1.29'},
+				{songTitle: "Paranoid", price:'$1.29'},
+				{songTitle: "Mad World", price:'$1.29'},
+				{songTitle: 'Awakening', price:'$1.29'},
+				{songTitle: "Living in a Dream Is So Easy", price:'$1.29'},
+				{songTitle: "Buried", price:'$1.29'},
+				{songTitle: "Mercury in Retrograde", price:'$1.29'},
+				{songTitle: 'Paradise', price:'$1.29'},
+				{songTitle: "Afterglow", price:'$1.29'}]
+		},	
+		sonicYouth: {albumTitle: "Goo", artist: 'Sonic Youth', albumPrice: '$7.99', genre: 'Rock', 
+			cover: "https://i.scdn.co/image/93e438d4b4e7cecbbfd7d746f37b5ba35200549f",
+			songs:
+				[{songTitle: 'Dirty Boots', price:'$1.29'},
+				{songTitle: 'Tunic (Song for Karen)', price:'$1.29'},
+				{songTitle: 'Mary-Christ', price:'$1.29'},
+				{songTitle: "Kool Thing", price:'$1.29'},
+				{songTitle: "Mote", price:'$1.29'},
+				{songTitle: 'My Friend Goo', price:'$1.29'},
+				{songTitle: "Disappear", price:'$1.29'},
+				{songTitle: "Mildred Pierce", price:'$1.29'},
+				{songTitle: "Cinderella's Big Score", price:'$1.29'},
+				{songTitle: 'Scooter and Jinx', price:'$1.29'},
+				{songTitle: "Titanium Expose", price:'$1.29'}]
+		},	
+		dvsn: {albumTitle: "SEPT. 5TH", artist: 'dvsn', albumPrice: '$7.99', genre: 'R&B', 
+			cover: "https://i.scdn.co/image/d609584c62d5b07eba7d601a4bf5a86b946b0375",
+			songs:
+				[{songTitle: 'With Me', price:'$1.29'},
+				{songTitle: 'Too Deep', price:'$1.29'},
+				{songTitle: 'Try/Effortless', price:'$1.29'},
+				{songTitle: "Do It Well", price:'$1.29'},
+				{songTitle: "In + Out", price:'$1.29'},
+				{songTitle: 'Sept. 5th', price:'$1.29'},
+				{songTitle: "Hallucinations", price:'$1.29'},
+				{songTitle: "Another One", price:'$1.29'},
+				{songTitle: "Angela", price:'$1.29'},
+				{songTitle: 'The Line', price:'$1.29'}]
+		},		
+
 	}
+
 };
 
 data.getFeatured = function() {
   return this.featuredTen;
 };
 
+data.getStaff = function(){
+	return this.staffPicks;
+};
+
+data.getDeals = function(){
+	return this.deals;
+};
+
 data.getAbout = function() {
   return this.about;
 };
 
+
 export default data;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
