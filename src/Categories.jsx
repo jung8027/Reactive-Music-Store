@@ -3,6 +3,11 @@ import {Link} from 'react-router'
 
 
 var Categories = React.createClass({
+  
+
+
+
+
   render: function() {
     return (
       <div className="sidebar-nav">
