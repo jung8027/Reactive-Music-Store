@@ -8,6 +8,7 @@ const AlbumTile = React.createClass({
   render: function() {
     var data = this.props.albums;
     var albumInfo = [];
+    
     for (var key in data){
       albumInfo.push(<Albums
         songArtist={data[key].artist}
@@ -17,7 +18,7 @@ const AlbumTile = React.createClass({
     }
 
     return (
-      <div>
+      <div className="flexcontainer">
         {albumInfo}
       </div>
     )

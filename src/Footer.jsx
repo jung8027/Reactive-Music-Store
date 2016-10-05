@@ -2,6 +2,8 @@ import React from 'react';
 
 var Footer = React.createClass({
   render: function() {
+    var className = (this.props.className) ? this.props.className : "";
+    var id = (this.props.id) ? this.props.id : "";
     var footerData = [];
     var storeData = this.props.data;
 
@@ -10,7 +12,7 @@ var Footer = React.createClass({
     }
 
     return (
-      <ul id="footer">
+      <ul className={className} id={id}>
         {footerData}
       </ul>
     )
