@@ -29,7 +29,7 @@ var App = React.createClass({
               <a className="navbar-brand" href="#"></a>
             </div>
             <ul className="nav navbar-nav">
-              <li className="active"><Link to='/'>New Releases</Link></li>
+              <li><Link to='/'>New Releases</Link></li>
               <li><Link to='deals'>Deals</Link></li>
               <li><Link to='#'>Popular Songs</Link></li>
               <li><Link to='#'>Popular Albums</Link></li>

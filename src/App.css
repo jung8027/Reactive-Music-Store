@@ -4,7 +4,7 @@
 }
 
 .flexcontainer{
-  justify-content: center;
+  justify-content: space-around;
   display:flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -19,7 +19,6 @@
 #page {
   padding: 5px;
   padding-left: 40px;
-  justify-content: center;
 }
 
 .carousel-1{
@@ -84,6 +83,8 @@
 #footer li {
   list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
