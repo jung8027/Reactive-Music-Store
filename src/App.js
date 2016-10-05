@@ -14,7 +14,6 @@ import StaffPicks from './StaffPicks.jsx';
 
 
 
-
 var App = React.createClass({
   getState: function() {
     return {cart:{numOfItems: 0, items: []}}
