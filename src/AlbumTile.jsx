@@ -1,21 +1,22 @@
 import React from 'react';
 import Albums from './Albums';
+import data from './data.js';
 
 const AlbumTile = React.createClass({
   propTypes: {
 		songs: React.PropTypes.array
 	},
   render: function() {
-    var data = this.props.albums;
-    var albumInfo = [];
-    
-    for (var key in data){
-      albumInfo.push(<Albums
-        songArtist={data[key].artist}
-        songAlbum={data[key].albumTitle}
-        songImg={data[key].cover}
-        />)
-    }
+    var keys = this.props.albums;
+    var albums = data.getAlbums();
+
+    var albumInfo = keys.map(function(key){
+      return <Albums songArtist={albums[key].artist}
+              songAlbum={albums[key].albumTitle}
+              songImg={albums[key].cover}
+              />
+    })
+
 
     return (
       <div className="flexcontainer">
