@@ -13,7 +13,7 @@
 
 /*this doesn't work yet*/
 /*.coverflow__container__1P-xE {
-  background: transparent; 
+  background: transparent;
 }*/
 
 #page {
@@ -81,6 +81,14 @@
   padding-left: 20px;
 }
 
+#footer {
+  padding: 0px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #footer li {
   list-style: none;
   text-align: center;
@@ -92,10 +100,12 @@
     max-height: none;
     margin: 0px;
   }
+
   .sidebar-nav .navbar ul {
     float: none;
     display: block;
   }
+
   .genre:hover {
     color: #E6E8FA;
     -moz-transform: translate(30px, 00px);
