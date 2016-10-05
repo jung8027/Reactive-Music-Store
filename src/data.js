@@ -486,8 +486,8 @@ var data = {
 			{songTitle: 'Interlude: Pedestals', price:'$0.69'},
 			{songTitle: 'Scales (feat. Kelela)', price:'$1.29'},
 			{songTitle: 'Closing: The Chosen Ones', price: '$0.69'}]
+    }
 	}
-
 };
 
 data.getFeatured = function() {

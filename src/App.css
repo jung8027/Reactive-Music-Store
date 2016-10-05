@@ -1,7 +1,33 @@
+/*STYLES FOR CONTENTS*/
+.albums{
+  padding: 5px;
+}
+
+.flexcontainer{
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 15px;
+}
+
+/*this doesn't work yet*/
+/*.coverflow__container__1P-xE {
+  background: transparent;
+}*/
+
 #page {
   padding: 5px;
+  padding-left: 40px;
   justify-content: center;
 }
+
+.carousel-1{
+  text-align: center;
+}
+
+/*END OF STYLES FOR CONTENTS*/
+
 
 .App {
   text-align: center;
@@ -28,15 +54,9 @@
   to { transform: rotate(360deg); }
 }
 
-div.banner {
+
+.banner {
   text-align: center;
-  /*height: 150px;*/
-  /*padding: 0px;*/
-  /*margin-bottom: 80px;*/
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*background-image: url('./../images/ReactiveLogo.jpg');
-  background-repeat: no-repeat;*/
   /*background-color: white;*/
 }
 
@@ -46,7 +66,6 @@ div.banner {
 }
 
 .navbar {
-  /*top: 150px;*/
   margin-bottom: 30px;
   border-radius: 1px;
 }
@@ -56,18 +75,19 @@ div.banner {
   width: 150px;
 }
 
-.carousel-1{
-  text-align: center;
-}
+
 
 .row {
   justify-content: center;
   padding-left: 20px;
 }
 
-
-.coverflow__stage__14oqC{
- /*background-color: white;*/
+#footer {
+  padding: 0px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer li {
@@ -81,10 +101,12 @@ div.banner {
     max-height: none;
     margin: 0px;
   }
+
   .sidebar-nav .navbar ul {
     float: none;
     display: block;
   }
+
   .genre:hover {
     color: #E6E8FA;
     -moz-transform: translate(30px, 00px);
@@ -114,6 +136,16 @@ div.banner {
   padding: 0px;
 }
 
-div.row.sidebar-divs {
-  /*width: 242.5px;*/
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.boxdiv {
+  display: inline-block;
+  width: 450px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: silver;
+  margin-left: 100px;
 }
