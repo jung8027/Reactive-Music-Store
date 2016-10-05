@@ -47,11 +47,12 @@ var App = React.createClass({
             <div className="col-sm-10">
               <div id="page">
                 {this.props.children}
-                <Footer data={data.about}/>
               </div>
             </div>
           </div>
         </div>
+
+        <Footer id="footer" data={data.about}/>
       </div>
     )
   }
