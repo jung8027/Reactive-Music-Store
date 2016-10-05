@@ -11,7 +11,7 @@ import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
 import Searchbar from './Searchbar.jsx'
 import StaffPicks from './StaffPicks.jsx';
-
+import PopularAlbums from './PopularAlbums.jsx'
 
 
 var App = React.createClass({
@@ -34,7 +34,7 @@ var App = React.createClass({
               <li><Link to='/'>New Releases</Link></li>
               <li><Link to='deals'>Deals</Link></li>
               <li><Link to='#'>Popular Songs</Link></li>
-              <li><Link to='#'>Popular Albums</Link></li>
+              <li><Link to='popularalbums'>Popular Albums</Link></li>
               <li><Link to='staffpicks'>Staff Picks</Link></li>
               <li className="searchbar"><Searchbar /></li>
             </ul>
@@ -53,7 +53,8 @@ var App = React.createClass({
             </div>
           </div>
         </div>
-
+        
+        <hr />
         <Footer id="footer" data={data.about}/>
       </div>
     )
@@ -65,6 +66,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={NewReleases} />
       <Route path="deals" component={Deals} />
+      <Route path="popularalbums" component={PopularAlbums} />
       <Route path="staffpicks" component={StaffPicks} />
     </Route>
   </Router>,
