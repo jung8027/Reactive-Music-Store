@@ -9,6 +9,7 @@ import NewReleases from './NewReleases.jsx';
 import Deals from './Deals.jsx';
 import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
+import StaffPicks from './StaffPicks.jsx';
 
 
 
@@ -33,8 +34,7 @@ var App = React.createClass({
               <li><Link to='deals'>Deals</Link></li>
               <li><Link to='#'>Popular Songs</Link></li>
               <li><Link to='#'>Popular Albums</Link></li>
-              <li><Link to='#'>Staff Picks</Link></li>
-              <li></li>
+              <li><Link to='staffpicks'>Staff Picks</Link></li>
             </ul>
           </div>
         </nav>
@@ -63,6 +63,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={NewReleases} />
       <Route path="deals" component={Deals} />
+      <Route path="staffpicks" component={StaffPicks} />
     </Route>
   </Router>,
   document.getElementById('root')

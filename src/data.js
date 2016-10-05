@@ -488,7 +488,6 @@ var data = {
 			{songTitle: 'Closing: The Chosen Ones', price: '$0.69'}]
     }
 	}
-
 };
 
 data.getFeatured = function() {
