@@ -87,5 +87,17 @@
     ],
     "testEnvironment": "node",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$"
-  }
+  },
+  "description": "## Setup - Start by cloning the simple react setup: https://github.com/nmadd/simple-react-setup - Install Bootstrap using `npm install bootstrap --save`, and import it into you `App.js` file using `import 'bootstrap/dist/css/bootstrap.css';` - npm install react-router - IMPORTANT: If you run into issues or have questions while making your project, post them here so we can all try to help out: https://github.com/C4Q/AC3.1/issues",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jung8027/movie-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jung8027/movie-store/issues"
+  },
+  "homepage": "https://github.com/jung8027/movie-store#readme"
 }

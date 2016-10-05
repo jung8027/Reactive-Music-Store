@@ -1,7 +1,34 @@
+/*STYLES FOR CONTENTS*/
+.albums{
+  padding: 5px;
+}
+
+.flexcontainer{
+  justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 15px;
+}
+
+/*this doesn't work yet*/
+/*.coverflow__container__1P-xE {
+  background: transparent; 
+}*/
+
 #page {
   padding: 5px;
+  padding-left: 40px;
   justify-content: center;
 }
+
+.carousel-1{
+  text-align: center;
+}
+
+/*END OF STYLES FOR CONTENTS*/
+
+
 .App {
   text-align: center;
 }
@@ -27,6 +54,7 @@
   to { transform: rotate(360deg); }
 }
 
+
 .banner {
   text-align: center;
 }
@@ -46,18 +74,11 @@
   width: 150px;
 }
 
-.carousel-1{
-  text-align: center;
-}
+
 
 .row {
   justify-content: center;
   padding-left: 20px;
-}
-
-
-.coverflow__stage__14oqC{
- /*background-color: white;*/
 }
 
 #footer li {
@@ -117,3 +138,4 @@ ul {
   background-color: silver;
   margin-left: 100px;
 }
+

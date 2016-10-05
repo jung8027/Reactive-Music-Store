@@ -40,10 +40,10 @@ var App = React.createClass({
 
         <div className="container sidebar-divs ">
           <div className="row sidebar-divs ">
-            <div className="col-sm-3 sidebar-divs ">
+            <div className="col-sm-2 sidebar-divs ">
               <Categories />
             </div>
-            <div className="col-sm-9">
+            <div className="col-sm-10">
               <div id="page">
                 {this.props.children}
                 <Footer data={data.about}/>
