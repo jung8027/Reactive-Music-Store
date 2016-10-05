@@ -117,3 +117,29 @@ ul {
   background-color: silver;
   margin-left: 100px;
 }
+
+#laurel-img {
+  height: 200px;
+  padding-left: 20px;
+}
+
+#ambar {
+  width: 250px;
+}
+
+#jung {
+  width: 250px;
+}
+
+#ruben {
+  width: 250px;
+}
+
+#salina {
+  width: 250px;
+}
+
+.staff {
+  padding-left: 150px;
+}
+
