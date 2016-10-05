@@ -1,16 +1,16 @@
-const React = require('react');
+import React from 'react';
 import Albums from './Albums';
-import $ from 'jquery';
 
 const AlbumTile = React.createClass({
-  propTypes : {
+  propTypes: {
 		songs: React.PropTypes.array
 	},
   render: function() {
     var data = this.props.albums;
     var albumInfo = [];
+    
     for (var key in data){
-      albumInfo.push(<Albums 
+      albumInfo.push(<Albums
         songArtist={data[key].artist}
         songAlbum={data[key].albumTitle}
         songImg={data[key].cover}
@@ -20,7 +20,7 @@ const AlbumTile = React.createClass({
     return (
       <div className="flexcontainer">
         {albumInfo}
-       </div>
+      </div>
     )
   }
 });
