@@ -9,12 +9,18 @@ var Albums = React.createClass({
     songPrice: React.PropTypes.string,
 	},
   render: function() {
+    var className = (this.props.className) ? this.props.className + ' albums' : 'albums';
+    var details = [];
+
+    if(this.props.songAlbum) details.push(<p>{this.props.songAlbum}</p>);
+    if(this.props.songArtist) details.push(<p>{this.props.songArtist}</p>);
+    if(this.props.songPrice) details.push(<p>{this.props.songPrice}</p>)
+    if(this.props.faveTrack) details.push(<p>Fave Track: {this.props.faveTrack}</p>);
+
     return (
-      <div className="albums">
+      <div className={className}>
         <img className="album" src={this.props.songImg}></img>
-        <p>{this.props.songAlbum}</p>
-        <p>{this.props.songArtist}</p>
-        <p>{this.props.songPrice}</p>
+        {details}
       </div>
     )
   }

@@ -5,21 +5,32 @@ import {Link} from 'react-router'
 var Searchbar = React.createClass({
   getInitialState: function(){
     return {userInput: ""}
-  },//intiall state for the input tag
+  },//intial state for the input tag
   inputChange: function(event){
       //change the state of the imput var
     this.setState({userInput: event.target.value})
   },
   submit: function(){
-    //to call on the button onclick 
+   
   },
   render: function() {
     return (
-      <div>
-        <h1>Hello World!</h1>
-        <input type="text" name="input" className="form-control" placeholder= "Search a song or album " value={this.state.userInput} onChange={this.inputChange} />
-        <button onClick={this.submit}><i className="fa fa-search"></i></button>
-      </div>
+      <div class="container">
+  <div class="row">
+        <div class="col-md-6">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search music" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i className="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
     )
   }
 })

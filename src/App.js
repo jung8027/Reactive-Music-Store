@@ -9,8 +9,9 @@ import NewReleases from './NewReleases.jsx';
 import Deals from './Deals.jsx';
 import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
-import Coverflow from 'react-coverflow';
-import AlbumTile from './AlbumTile'
+import Searchbar from './Searchbar.jsx'
+import StaffPicks from './StaffPicks.jsx';
+
 
 
 
@@ -22,7 +23,7 @@ var App = React.createClass({
     return (
       <div>
         <div className="banner">
-          <img id="banner-img" src={require('./../images/ReactiveLogo.jpg')} />
+          <img id="banner-img" src={require('./../images/reactiveLogo.png')} />
         </div>
 
         <nav className="navbar navbar-inverse">
@@ -35,7 +36,8 @@ var App = React.createClass({
               <li><Link to='deals'>Deals</Link></li>
               <li><Link to='#'>Popular Songs</Link></li>
               <li><Link to='#'>Popular Albums</Link></li>
-              <li><Link to='#'>Staff Picks</Link></li>
+              <li><Link to='staffpicks'>Staff Picks</Link></li>
+              <li className="searchbar"><Searchbar /></li>
             </ul>
           </div>
         </nav>
@@ -48,11 +50,12 @@ var App = React.createClass({
             <div className="col-sm-10">
               <div id="page">
                 {this.props.children}
-                <Footer data={data.about}/>
               </div>
             </div>
           </div>
         </div>
+
+        <Footer id="footer" data={data.about}/>
       </div>
     )
   }
@@ -63,6 +66,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={NewReleases} />
       <Route path="deals" component={Deals} />
+      <Route path="staffpicks" component={StaffPicks} />
     </Route>
   </Router>,
   document.getElementById('root')
