@@ -67,6 +67,7 @@
 .navbar {
   margin-bottom: 30px;
   border-radius: 1px;
+  display: flex;
 }
 
 .album{
@@ -122,6 +123,7 @@
   .sidebar-nav .navbar li {
     float: none;
     display: block;
+    display: flex;
 
   }
   .sidebar-nav .navbar .genre {
@@ -148,6 +150,55 @@ ul {
   background-color: silver;
   margin-left: 100px;
 }
+
+/*SEARCH BAR*/
+#custom-search-input{
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 5px;
+  flex-grow: 1;
+}
+#custom-search-input {
+  margin-top: 10px;
+  flex-grow: 1;
+
+}
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+    margin-top: 10px;
+      flex-grow: 1;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .fa{
+    font-size: 23px;
+}
+.navbar-nav .nav .navbar-brand{
+    display: flex;
+    width: 100%;
+}
+.searchbar {
+  flex-grow: 1;
+}
+/*END OF SEARCH BAR*/
 
 #laurel-img {
   height: 200px;
