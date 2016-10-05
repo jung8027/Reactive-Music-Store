@@ -4,16 +4,16 @@ import './App.css'
 import data from './data'
 import AlbumTile from './AlbumTile.jsx'
 
-var Deals = React.createClass({
+var PopularAlbums = React.createClass({
   render: function() {
     return(
       <div>
         <div className="row">
-          <AlbumTile albums={data.getDeals()}/>
+          <AlbumTile albums={data.getPopularAlbums()}/>
         </div>
       </div>
      )
   }
 })
 
-export default Deals;
+export default PopularAlbums;
