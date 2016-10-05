@@ -9,14 +9,14 @@ var Albums = React.createClass({
     songPrice: React.PropTypes.string,
 	},
   render: function() {
-    var className = this.props.className;
+    var className = (className === undefined) ? 'albums' : className + ' albums';
     var details = [];
-
-    if(className === undefined) className = "col-md-2";
 
     if(this.props.songAlbum) details.push(<p>{this.props.songAlbum}</p>);
     if(this.props.songArtist) details.push(<p>{this.props.songArtist}</p>);
+    if(this.props.songPrice) details.push(<p>{this.props.songPrice}</p>)
     if(this.props.faveTrack) details.push(<p>Fave Track: {this.props.faveTrack}</p>);
+    
     return (
       <div className={className}>
         <img className="album" src={this.props.songImg}></img>
