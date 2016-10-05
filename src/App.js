@@ -9,6 +9,7 @@ import NewReleases from './NewReleases.jsx';
 import Deals from './Deals.jsx';
 import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
+import Searchbar from './Searchbar.jsx'
 
 
 
@@ -34,6 +35,9 @@ var App = React.createClass({
               <li><Link to='#'>Popular Songs</Link></li>
               <li><Link to='#'>Popular Albums</Link></li>
               <li><Link to='#'>Staff Picks</Link></li>
+              <li className="searchbar"><Searchbar /></li>
+             
+
             </ul>
           </div>
         </nav>
