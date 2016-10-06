@@ -14,6 +14,7 @@ const AlbumTile = React.createClass({
       return <Albums songArtist={albums[key].artist}
               songAlbum={albums[key].albumTitle}
               songImg={albums[key].cover}
+              albumId={key}
               />
     })
 

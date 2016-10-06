@@ -54,7 +54,7 @@ var App = React.createClass({
             </div>
           </div>
         </div>
-        
+
         <hr />
         <Footer id="footer" data={data.about}/>
       </div>
