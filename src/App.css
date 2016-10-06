@@ -73,12 +73,10 @@
   display: flex;
 }
 
-.album{
+.album {
   height: 150px;
   width: 150px;
 }
-
-
 
 .row {
   justify-content: center;
