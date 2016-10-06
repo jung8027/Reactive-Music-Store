@@ -14,10 +14,10 @@ var Albums = React.createClass({
     var className = (this.props.className) ? this.props.className + ' albums' : 'albums';
     var details = [];
 
-    if(this.props.songAlbum) details.push(<p>{this.props.songAlbum}</p>);
-    if(this.props.songArtist) details.push(<p>{this.props.songArtist}</p>);
-    if(this.props.songPrice) details.push(<p>{this.props.songPrice}</p>)
-    if(this.props.faveTrack) details.push(<p>Fave Track: {this.props.faveTrack}</p>);
+    if(this.props.songAlbum) details.push(<p id="albumBold">{this.props.songAlbum}</p>);
+    if(this.props.songArtist) details.push(<div className="albumInfo">{this.props.songArtist}</div>);
+    if(this.props.songPrice) details.push(<div className="albumInfo">{this.props.songPrice}</div>)
+    if(this.props.faveTrack) details.push(<div className="albumInfo">Fave Track: {this.props.faveTrack}</div>);
 
     return (
       <div className={className}>

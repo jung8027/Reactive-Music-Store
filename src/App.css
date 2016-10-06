@@ -1,6 +1,8 @@
 /*STYLES FOR CONTENTS*/
 .albums{
   padding: 5px;
+  text-align: center;
+  width: 200px;
 }
 
 .flexcontainer{
@@ -250,4 +252,17 @@ hr {
     margin-right: 120px;
     border-style: inset;
     border-width: 1px;
+}
+
+#albumBold {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  text-align: center;
+  word-wrap: normal;
+}
+
+.albumInfo {
+  text-align: center;
 }
