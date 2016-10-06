@@ -19,7 +19,8 @@ var StaffPicks = React.createClass({
         <div className="row staff">
 
           <div className="work col-md-3">
-            <Albums className="ambarAlbum" songImg={info.Ambar.cover} songAlbum={info.Ambar.albumTitle} songArtist={info.Ambar.artist} faveTrack={info.Ambar.faveTrack} albumId={info.Ambar.albumId} /> 
+
+            <Albums className="ambarAlbum" songImg={info.Ambar.cover} songAlbum={info.Ambar.albumTitle} songArtist={info.Ambar.artist} faveTrack={info.Ambar.faveTrack} albumId={info.Ambar.albumId} />
             <img className="nametag" src={require('./../images/ambar_tag.png')} />
           </div>
 
