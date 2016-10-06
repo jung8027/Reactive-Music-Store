@@ -1,12 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router'
 
 
 var Albums = React.createClass({
   propTypes: {
 		songArtist: React.PropTypes.string,
-		songAlbum:React.PropTypes.string,
+		songAlbum: React.PropTypes.string,
 		songImg: React.PropTypes.string,
     songPrice: React.PropTypes.string,
+    albumId: React.PropTypes.string
 	},
   render: function() {
     var className = (this.props.className) ? this.props.className + ' albums' : 'albums';
@@ -19,7 +21,7 @@ var Albums = React.createClass({
 
     return (
       <div className={className}>
-        <img className="album" src={this.props.songImg}></img>
+        <Link to={"/album/" + this.props.albumId}><img className="album" src={this.props.songImg}></img></Link>
         {details}
       </div>
     )

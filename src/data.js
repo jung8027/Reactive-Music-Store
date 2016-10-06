@@ -7,11 +7,13 @@ var data = {
 	},
 
 	featuredTen: ['0G1ffjfFuTUTVjDrVdLimH', '3Yko2SxDk4hc6fncIBQlcM', '1PgfRdl3lPyACfUGH4pquG', '1PDX0hMmsSdq122EupvNZF',
-								'09KOjaflTBRE28GVvXqkYC', '3OZgEywV4krCZ814pTJWr7', '44NX2ffIYHr6D4n7RaZF7A', '6twKQ0EsUJHVlAr6XBylrj',
-								'2WzQeYsbrDq1UcVZmY8dVR', '1ZtzvWcGJgF9vnA3kT3aUf'],
+				'09KOjaflTBRE28GVvXqkYC', '3OZgEywV4krCZ814pTJWr7', '44NX2ffIYHr6D4n7RaZF7A', '6twKQ0EsUJHVlAr6XBylrj',
+				'2WzQeYsbrDq1UcVZmY8dVR', '1ZtzvWcGJgF9vnA3kT3aUf'],
+
 	staffPicks: {
 		Ambar: {albumTitle: "Christine and the Queens", artist: "Christine and the Queens", albumPrice: "$7.99", genre: "Alternative", faveTrack: "Tilted",
 			cover:"https://i.scdn.co/image/36f6f8627a30740907c53390f7a7b77c49ede6da",
+			albumId: "6icxSA6dVp16bBXaeAMSYG",
 			songs:
 					[{songTitle: 'iT', price:'$1.29'},
 					{songTitle: 'Saint Claude', price:'$1.29'},
@@ -28,6 +30,7 @@ var data = {
 			},
 		Jung: {albumTitle: "Mind Over Matter", artist: "Zion I", albumPrice: "$11.99", genre: "Pop", faveTrack: "Revolution (B-Boy Anthem)",
 			cover:"https://i.scdn.co/image/39b419e188086f21db38f3a5f15953130658b2d9",
+			albumId: "0hK8s6eayF6Ba086c4iQtw",
 			songs:
 					[{songTitle: 'Creation', price:'$1.29'},
 					{songTitle: 'Revolution (B-Boy Anthem)', price:'$1.29'},
@@ -53,6 +56,7 @@ var data = {
 		},
 		Ruben: {albumTitle: "To Pimp a Butterfly", artist: "Kendrick Lamar", albumPrice: "$13.99", genre: "Rap & Hip-Hop", faveTrack: 'The Blacker the Berry',
 			cover:"https://i.scdn.co/image/91a2c697abefed24e40d758c985b4b48537638df",
+			albumId: "7ycBtnsMtyVbbwTfJwRjSP",
 			songs:
 					[{songTitle: "Wesley's Theory (feat. George Clinton & Thundercat)", price:'$1.29'},
 					{songTitle: 'For Free? (Interlude)', price:'$1.29'},
@@ -73,6 +77,7 @@ var data = {
 		},
 		Salina: {albumTitle: "Set Yourself On Fire", artist: "Stars", albumPrice: "$9.99", genre: "Alternative", faveTrack: "Your Ex-Lover Is Dead",
 			cover:"https://i.scdn.co/image/d432b60f75c5c41c1a1c96558f8e75736bdd9dd4",
+			albumId: "7yMj4j66GYb00KkKHC7hAR",
 			songs:
 					[{songTitle: 'Your Ex-Lover Is Dead', price:'$1.29'},
 					{songTitle: 'Set Yourself on Fire', price:'$1.29'},

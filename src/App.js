@@ -12,6 +12,7 @@ import Footer from './Footer.jsx';
 import Searchbar from './Searchbar.jsx'
 import StaffPicks from './StaffPicks.jsx';
 import PopularAlbums from './PopularAlbums.jsx'
+import TrackListings from './TrackListings.jsx'
 
 
 var App = React.createClass({
@@ -68,6 +69,7 @@ ReactDOM.render(
       <Route path="deals" component={Deals} />
       <Route path="popularalbums" component={PopularAlbums} />
       <Route path="staffpicks" component={StaffPicks} />
+      <Route path="/album/:albumId" component={TrackListings} />
     </Route>
   </Router>,
   document.getElementById('root')
