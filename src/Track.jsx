@@ -10,18 +10,19 @@ var Track = React.createClass({
 		return(
 
 			<div className="row twoListing">
-			
-				<div className="col-md-6">
-					{this.props.title}
-	          	</div>
+				
+					<div className="col-md-6">
+						{this.props.title}
+		          	</div>
 
-	          	<div className="col-md-2">
-	          		{this.props.price}
-	          	</div>
+		          	<div className="col-md-2">
+		          		<button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
+					</div>
+		      
 
-	          	<div className="col-md-4">
-	          	</div>
-
+		          	<div className="col-md-4">
+		          	</div>
+		          	
 			</div>
 
 		)

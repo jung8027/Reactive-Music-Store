@@ -1,7 +1,8 @@
-/*STYLES FOR CONTENTS*/
+//*STYLES FOR CONTENTS*/
 .albums{
   padding: 5px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
 }
 
@@ -15,12 +16,14 @@
 
 /*this doesn't work yet*/
 /*.coverflow__container__1P-xE {
-  background: transparent;
+  background: transparent;al
 }*/
 
 #page {
   padding: 5px;
-  padding-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-left: 40px;*/
 }
 
 .carousel-1{
@@ -224,24 +227,14 @@ ul {
   padding-left: 20px;
 }
 
-#ambar {
-  width: 200px;
-}
-
-#jung {
-  width: 200px;
-}
-
-#ruben {
-  width: 200px;
-}
-
-#salina {
-  width: 200px;
-}
-
 .work {
   padding-right: 20px;
+}
+
+.nametag {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
 }
 
 hr {
@@ -265,4 +258,9 @@ hr {
 
 .albumInfo {
   text-align: center;
+}
+
+.buy {
+  background-color: black;
+  color: white;
 }
