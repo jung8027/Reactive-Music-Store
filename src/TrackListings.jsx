@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import data from './data'
-import Albums from './Albums.jsx' 
+import Albums from './Albums.jsx'
 import Track from './Track.jsx'
 
 
@@ -29,19 +29,19 @@ var TrackListings = React.createClass({
 						<h1> {album.albumTitle}</h1>
 						<h4>{album.artist}</h4>
 						<br />
-						<button className="buyAlbum">BUY MP3 ALBUM "PRICE HERE"</button>
+						<button className="btn btn-default buy" type="submit">BUY MP3 ALBUM "PRICE HERE"</button>
 					</div>
 				</div>
 				<br /> <br />
-				
+
 				<div className="row twoListing">
-			
+
 					<div className="col-md-6">
 						<h5>Tracks:</h5>
 		          	</div>
 
 				</div>
-				
+
 				{tracks}
 
 			</div>
