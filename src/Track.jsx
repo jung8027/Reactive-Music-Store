@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
-import data from './data'
-import Albums from './Albums.jsx'
 
 
 var Track = React.createClass({
