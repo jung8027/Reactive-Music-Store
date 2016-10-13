@@ -11,15 +11,16 @@ var Track = React.createClass({
 
 			<div className="row twoListing">
 
-				<div className="col-md-6">
+				<li className="col-md-9">
 					{this.props.title}
-	          	</div>
+	          	</li>
 
-	          	<div className="col-md-2">
+	          	<div className="col-md-1">
 	          		<button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
 	          	</div>
 
-	          	<div className="col-md-4">
+	          	<div className="col-md-2">
+	          		<img src= {require('./../images/play_button.png')} className="play" />
 	          	</div>
 
 			</div>
@@ -29,3 +30,4 @@ var Track = React.createClass({
 });
 
 export default Track;
+ 

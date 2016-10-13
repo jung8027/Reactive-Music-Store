@@ -73,15 +73,13 @@
   display: flex;
 }
 
-.album{
+.album {
   height: 150px;
   width: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .row {
   justify-content: center;
@@ -265,4 +263,8 @@ hr {
 .buy {
   background-color: black;
   color: white;
+}
+
+.play {
+  width: 20px;
 }
