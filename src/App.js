@@ -13,6 +13,7 @@ import Searchbar from './Searchbar.jsx';
 import Search from './Search.jsx';
 import StaffPicks from './StaffPicks.jsx';
 import PopularAlbums from './PopularAlbums.jsx'
+import PopularSongs from './PopularSongs.jsx'
 import TrackListings from './TrackListings.jsx'
 
 var App = React.createClass({
@@ -65,7 +66,7 @@ var App = React.createClass({
             <ul className="nav navbar-nav">
               <li><Link to='/'>New Releases</Link></li>
               <li><Link to='deals'>Deals</Link></li>
-              <li><Link to='#'>Popular Songs</Link></li>
+              <li><Link to='popularsongs'>Popular Songs</Link></li>
               <li><Link to='popularalbums'>Popular Albums</Link></li>
               <li><Link to='staffpicks'>Staff Picks</Link></li>
               <li className="searchbar"><Searchbar setSearch={this.setSearch}/></li>
@@ -100,6 +101,7 @@ ReactDOM.render(
       <IndexRoute component={NewReleases} />
       <Route path="deals" component={Deals} />
       <Route path="popularalbums" component={PopularAlbums} />
+      <Route path="popularsongs" component={PopularSongs} />
       <Route path="staffpicks" component={StaffPicks} />
       <Route path="/album/:albumId" component={TrackListings} />
       <Route path="/song/:songName" component={Search} />

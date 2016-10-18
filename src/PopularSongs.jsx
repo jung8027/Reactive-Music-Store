@@ -1,11 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import './App.css'
-import data from './data'
-import Carousel  from './Carousel.jsx'
-import AlbumTile from './AlbumTile.jsx'
+import './App.css';
+import data from './data';
+import AlbumTile from './AlbumTile.jsx';
 
-var NewReleases = React.createClass({
+var PopularSongs = React.createClass({
   getInitialState: function() {
     return { albums: null, searchTerm: ''};
   },
@@ -18,7 +17,6 @@ var NewReleases = React.createClass({
   render: function() {
     return(
       <div>
-        <Carousel id="featured-carousel"/>
         <div className="row">
           <AlbumTile albums={this.state.albums}/>
         </div>
@@ -27,4 +25,4 @@ var NewReleases = React.createClass({
   }
 })
 
-export default NewReleases;
+export default PopularSongs;
