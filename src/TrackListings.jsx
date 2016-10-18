@@ -26,10 +26,11 @@ var TrackListings = React.createClass({
 					</div>
 
 					<div className="col-md-6">
+						<br /> <br /> <br />
 						<h1> {album.albumTitle}</h1>
 						<h4>{album.artist}</h4>
 						<br />
-						<button className="btn btn-default buy" type="submit">BUY MP3 ALBUM "PRICE HERE"</button>
+						<button className="btn btn-default buy" type="submit">Buy MP3 Album {album.albumPrice}</button>
 					</div>
 				</div>
 				<br /> <br />
@@ -43,7 +44,7 @@ var TrackListings = React.createClass({
 				</div>
 
 				{tracks}
-
+				
 			</div>
 
 		)

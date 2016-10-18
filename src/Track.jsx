@@ -11,15 +11,15 @@ var Track = React.createClass({
 
 				<div className="col-md-6">
 					{this.props.title}
-	      </div>
+				</div>
 
 	      <div className="col-md-2">
 	        <button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
 	      </div>
 
-	      <div className="col-md-4">
+	      <div className="col-md-3">
+	        <img src= {require('./../images/play_button.png')} className="play" />
 	      </div>
-
 			</div>
 
 		)

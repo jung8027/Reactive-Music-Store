@@ -73,15 +73,13 @@
   display: flex;
 }
 
-.album{
+.album {
   height: 150px;
   width: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .row {
   justify-content: center;
@@ -285,4 +283,8 @@ ul {
 .search-labels {
   height: 20px;
   color: #8c8c8c;
+}
+
+.play {
+  width: 20px;
 }
