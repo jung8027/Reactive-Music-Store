@@ -239,7 +239,7 @@ ul {
   width: 200px;
 }
 
-hr {
+#footer-hr {
     display: block;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -265,4 +265,24 @@ hr {
 .buy {
   background-color: black;
   color: white;
+}
+
+.search-item {
+  word-wrap: normal;
+  height: 100px;
+}
+
+.search-img {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.search-row {
+  height: 100px;
+}
+
+.search-labels {
+  height: 20px;
+  color: #8c8c8c;
 }

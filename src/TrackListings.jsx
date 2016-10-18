@@ -38,7 +38,7 @@ var TrackListings = React.createClass({
 
 					<div className="col-md-6">
 						<h5>Tracks:</h5>
-		          	</div>
+		      </div>
 
 				</div>
 
