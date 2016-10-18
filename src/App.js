@@ -9,7 +9,8 @@ import NewReleases from './NewReleases.jsx';
 import Deals from './Deals.jsx';
 import Categories from './Categories.jsx'
 import Footer from './Footer.jsx';
-import Searchbar from './Searchbar.jsx'
+import Searchbar from './Searchbar.jsx';
+import Search from './Search.jsx';
 import StaffPicks from './StaffPicks.jsx';
 import PopularAlbums from './PopularAlbums.jsx'
 import TrackListings from './TrackListings.jsx'
@@ -17,7 +18,10 @@ import TrackListings from './TrackListings.jsx'
 
 var App = React.createClass({
   getState: function() {
-    return {cart:{numOfItems: 0, items: []}}
+    return {search:"", cart:{numOfItems: 0, items: []}}
+  },
+  setSearch: function(searchWord) {
+    this.setState({search: searchWord})
   },
   render: function() {
     return (
@@ -37,7 +41,7 @@ var App = React.createClass({
               <li><Link to='#'>Popular Songs</Link></li>
               <li><Link to='popularalbums'>Popular Albums</Link></li>
               <li><Link to='staffpicks'>Staff Picks</Link></li>
-              <li className="searchbar"><Searchbar /></li>
+              <li className="searchbar"><Searchbar setSearch={this.setSearch}/></li>
             </ul>
           </div>
         </nav>
@@ -54,8 +58,8 @@ var App = React.createClass({
             </div>
           </div>
         </div>
-        
-        <hr />
+
+        <hr id="footer-hr"/>
         <Footer id="footer" data={data.about}/>
       </div>
     )
@@ -70,6 +74,7 @@ ReactDOM.render(
       <Route path="popularalbums" component={PopularAlbums} />
       <Route path="staffpicks" component={StaffPicks} />
       <Route path="/album/:albumId" component={TrackListings} />
+      <Route path="/song/:songName" component={Search} />
     </Route>
   </Router>,
   document.getElementById('root')

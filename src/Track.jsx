@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
-import data from './data'
-import Albums from './Albums.jsx'
 
 
 var Track = React.createClass({
@@ -11,18 +9,17 @@ var Track = React.createClass({
 
 			<div className="row twoListing">
 
-				<li className="col-md-9">
+				<div className="col-md-6">
 					{this.props.title}
-	          	</li>
+				</div>
 
-	          	<div className="col-md-1">
-	          		<button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
-	          	</div>
+	      <div className="col-md-2">
+	        <button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
+	      </div>
 
-	          	<div className="col-md-2">
-	          		<img src= {require('./../images/play_button.png')} className="play" />
-	          	</div>
-
+	      <div className="col-md-3">
+	        <img src= {require('./../images/play_button.png')} className="play" />
+	      </div>
 			</div>
 
 		)
@@ -30,4 +27,3 @@ var Track = React.createClass({
 });
 
 export default Track;
- 
