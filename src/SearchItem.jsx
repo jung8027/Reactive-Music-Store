@@ -2,6 +2,18 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 var SearchItem = React.createClass({
+  //<audio controls src={this.props.audio} />
+  getInitialState: function() {
+    return {audio: new Audio(this.props.audio)}
+  },
+  buttonClicked: function() {
+    this.props.control(this.props.audio);
+    console.log(this.props.artist + ': ' + this.props.audio)
+    //this.props.control(this.props.audio)
+  },
+  componentWillReceiveProps: function() {
+    this.setState({audio: new Audio(this.props.audio)})
+  },
   render: function() {
     return (
       <div className="row">
@@ -19,7 +31,7 @@ var SearchItem = React.createClass({
           <button className="btn btn-default btn-xs buy" type="submit">{this.props.price}</button>
         </div>
         <div className="col-md-1 play search-item">
-          <audio controls src={this.props.audio} />
+          <img onClick={this.buttonClicked} src= {require('./../images/play_button.png')} className="play" />
         </div>
       </div>
     )
