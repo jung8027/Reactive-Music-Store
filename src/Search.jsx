@@ -23,7 +23,7 @@ var Search = React.createClass({
         var that = this;
         var searchItems = data.tracks.items.map(function(song){
           var price = (song.popularity > 65) ? '$1.29' : '$0.99';
-          console.log(song.artists[0].name + ': ' + song.preview_url)
+      
           return <SearchItem albumImg={song.album.images[1].url} songName={song.name} artist={song.artists[0].name}
                   album={song.album.name} price={price} audio={song.preview_url} control={that.togglePlay}/>
         })

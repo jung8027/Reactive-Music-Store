@@ -4,6 +4,9 @@ import './App.css'
 
 
 var Track = React.createClass({
+	buttonClicked: function() {
+    this.props.control(this.props.song);
+  },
 	render: function(){
 		return(
 
@@ -18,7 +21,7 @@ var Track = React.createClass({
 	      </div>
 
 	      <div className="col-md-3">
-	        <img src= {require('./../images/play_button.png')} className="play" />
+	        <img  onClick={this.buttonClicked} src={require('./../images/play_button.png')} className="play" />
 	      </div>
 			</div>
 
