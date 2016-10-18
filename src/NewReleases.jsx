@@ -13,6 +13,9 @@ var NewReleases = React.createClass({
     return { albums: null, searchTerm: ''};
   },
   componentWillMount: function() {
+    //pauses any music playing when switched to this page
+		this.props.pauseOnPageChange();
+    
     this.setState({albums: data.getFeatured()})
   },
   render: function() {

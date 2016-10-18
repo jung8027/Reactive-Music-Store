@@ -12,12 +12,15 @@ var TrackListings = React.createClass({
 		return {albumId: this.props.params.albumId, albumAudio: [], songPlaying: null, playing: false}
 	},
 	componentWillMount: function() {
+		//pauses any music playing when switched to this page
+		this.props.pauseOnPageChange();
+
     this.getAudio(this.state.albumId);
   },
   getAudio: function(albumId) {
     var that = this;
     $.ajax({
-      url: 'https://api.spotify.com/v1/albums/' +albumId+'/tracks',
+      url: 'https://api.spotify.com/v1/albums/' + albumId +'/tracks',
       success: function(data){
         var listings = []
 
@@ -29,36 +32,14 @@ var TrackListings = React.createClass({
       }
     })
   },
-	togglePlay: function(songClicked) {
-    var playing = this.state.playing;
-    var prevClickedSong = this.state.songPlaying;
-    var prevClickedSongSrc = (prevClickedSong) ? prevClickedSong.src : null;
-
-    if(songClicked === prevClickedSongSrc) {
-      if(playing){
-        prevClickedSong.pause()
-        this.setState({playing: false});
-      } else {
-        prevClickedSong.play()
-        this.setState({playing: true});
-      }
-    } else if(songClicked !== prevClickedSongSrc) {
-      if(prevClickedSong !== null) prevClickedSong.load();
-
-      var newSong = new Audio(songClicked);
-      newSong.play();
-      this.setState({songPlaying: newSong, playing: true})
-    }
-  },
 	render: function(){
 		var album = data.getAlbums()[this.state.albumId];
 	 	var songs = album.songs;
 		var state = this.state;
-		var togglePlay = this.togglePlay;
+		var togglePlay = this.props.togglePlay;
 		var tracks = songs.map(function(song, indx){
 			return <Track title={song.songTitle} price={song.price} song={state.albumAudio[indx]} control={togglePlay}/>
 		});
-		//console.log(this.state.albumAudio);
 
 		return(
 			<div className="container-fluid">
