@@ -5,27 +5,30 @@ import SearchItem from './SearchItem.jsx';
 
 var Search = React.createClass({
   getInitialState: function() {
-    return {searchContent: [], noResults: false, songPlaying: null, playing: false}
+    return {searchContent: [], noResults: false}
   },
   componentWillMount: function() {
+    //pauses any music playing when switched to this page
+		this.props.pauseOnPageChange();
+
     this.getSearchResults(this.props.params.songName);
   },
   componentWillReceiveProps: function(props) {
-    this.setState({songPlaying: null, playing: false})
     this.getSearchResults(props.params.songName);
   },
   getSearchResults: function(searchFor) {
+
     var searchWord = searchFor.split(' ').join('+');
 
     $.ajax({
       url: 'https://api.spotify.com/v1/search?q=' + searchWord + '&type=track&limit=20',
       success: function(data) {
-        var that = this;
+        var togglePlay = this.props.togglePlay;
         var searchItems = data.tracks.items.map(function(song){
           var price = (song.popularity > 65) ? '$1.29' : '$0.99';
-      
+
           return <SearchItem albumImg={song.album.images[1].url} songName={song.name} artist={song.artists[0].name}
-                  album={song.album.name} price={price} audio={song.preview_url} control={that.togglePlay}/>
+                  album={song.album.name} price={price} audio={song.preview_url} control={togglePlay}/>
         })
 
         var noResults = false;
@@ -60,6 +63,7 @@ var Search = React.createClass({
     }
   },
   render: function() {
+
     var display = (
       <div>
         <hr />

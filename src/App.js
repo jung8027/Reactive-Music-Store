@@ -15,13 +15,40 @@ import StaffPicks from './StaffPicks.jsx';
 import PopularAlbums from './PopularAlbums.jsx'
 import TrackListings from './TrackListings.jsx'
 
-
 var App = React.createClass({
-  getState: function() {
-    return {search:"", cart:{numOfItems: 0, items: []}}
+  getInitialState: function() {
+    return {search:"", cart:{numOfItems: 0, items: []}, songPlaying: null, playing: false}
   },
   setSearch: function(searchWord) {
     this.setState({search: searchWord})
+  },
+  togglePlay: function(songClicked) {
+    //console.log(this)
+    var playing = this.state.playing;
+    var prevClickedSong = this.state.songPlaying;
+    var prevClickedSongSrc = (prevClickedSong) ? prevClickedSong.src : null;
+
+    if(songClicked === prevClickedSongSrc) {
+      if(playing){
+        prevClickedSong.pause()
+        this.setState({playing: false});
+      } else {
+        prevClickedSong.play()
+        this.setState({playing: true});
+      }
+    } else if(songClicked !== prevClickedSongSrc) {
+      if(prevClickedSong !== null) prevClickedSong.load();
+
+      var newSong = new Audio(songClicked);
+      newSong.play();
+      this.setState({songPlaying: newSong, playing: true})
+    }
+  },
+  pauseOnPageChange: function() {
+    if(this.state.playing) {
+      this.state.songPlaying.pause();
+      this.setState({playing: false});
+    }
   },
   render: function() {
     return (
@@ -53,7 +80,8 @@ var App = React.createClass({
             </div>
             <div className="col-sm-10">
               <div id="page">
-                {this.props.children}
+                {React.cloneElement(this.props.children, {togglePlay: this.togglePlay,
+                  pauseOnPageChange: this.pauseOnPageChange})}
               </div>
             </div>
           </div>

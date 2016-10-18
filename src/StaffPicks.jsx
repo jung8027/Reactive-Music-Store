@@ -8,6 +8,10 @@ var StaffPicks = React.createClass({
   getInitialState: function() {
     return {albums: data.getStaff()};
   },
+  componentWillMount: function() {
+    //pauses any music playing when switched to this page
+		this.props.pauseOnPageChange();
+  },
   render: function() {
     var info=this.state.albums
     return(
