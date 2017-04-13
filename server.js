@@ -10,7 +10,7 @@ const path = require('path');
 
 
 //Serving up bundle.js file
-app.use(express.static(path.join(__dirname, '/build/')))
+app.use(express.static(path.join(__dirname, 'build')))
 
 app.get('/*', function(request, response) {
 	//console.log(request)
